@@ -44,3 +44,7 @@ button:hover {
     background-color: gray;
     color: white;
 }
+
+#count {
+    font-weight: bold;
+}

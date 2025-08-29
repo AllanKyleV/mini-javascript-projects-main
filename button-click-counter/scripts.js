@@ -1,52 +1,34 @@
 // select Objects
-const span = document.querySelector('#span');
+const countNum = document.querySelector('#count');
 const addBtn = document.querySelector('#add');
-const subractBtn = document.querySelector('#subtract');
+const subtractBtn = document.querySelector('#subtract');
 const resetBtn = document.querySelector('#reset');
 
-// Raw function
+function updateCount(count) {
+    
+    countNum.textContent = count;
+    if (count < 0) {
+        countNum.style.color = 'red';
+    } else if (count > 0) {
+        countNum.style.color = 'green';
+    } else {
+        countNum.style.color = 'black';
+    }
+};
+
 let count = 0;
 
 addBtn.addEventListener('click', () => {
     count++;
-    span.textContent = count;
-        if (count < 0) {
-    span.style.color = 'red';
-    } else if (count > 0) {
-        span.style.color = 'green';
-    } else {
-        span.style.color = 'black';
-    }
+    updateCount(count);
 });
 
-subractBtn.addEventListener('click', () => {
+subtractBtn.addEventListener('click', () => {
     count--;
-    span.textContent = count;
-        if (count < 0) {
-    span.style.color = 'red';
-    } else if (count > 0) {
-        span.style.color = 'green';
-    } else {
-        span.style.color = 'black';
-    }
+    updateCount(count);
 });
 
 resetBtn.addEventListener('click', () => {
     count = 0;
-    span.textContent = count;
-    if (count < 0) {
-    span.style.color = 'red';
-    } else if (count > 0) {
-        span.style.color = 'green';
-    } else {
-        span.style.color = 'black';
-    }
+    updateCount(count);
 });
-
-// I know, I can minimize the code, and I'll do later!
-
-// Bonus challenges (once you finish the basic one):
-// Add a reset button to set the counter back to 0.
-// Add a decrease button to subtract from the counter.
-// Make the number change color when it’s positive, negative, or zero.
-// Save the counter in localStorage, so the number stays even if you refresh the page.
