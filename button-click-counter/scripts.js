@@ -43,10 +43,10 @@ resetBtn.addEventListener('click', () => {
     }
 });
 
+// I know, I can minimize the code, and I'll do later!
 
 // Bonus challenges (once you finish the basic one):
 // Add a reset button to set the counter back to 0.
 // Add a decrease button to subtract from the counter.
 // Make the number change color when it’s positive, negative, or zero.
 // Save the counter in localStorage, so the number stays even if you refresh the page.
- 
