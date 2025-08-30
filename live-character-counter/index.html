@@ -11,12 +11,18 @@
     <main>
         <h1>Live Character Counter</h1>
         <p>No. of Character: <span id="count">0</span></p>
-        <p>Max Char Limit: <span id="max-count">1500</span></p>
+
+        <div id="input">
+            <input type="text" id="input-max" placeholder="Input Max No.">
+            <button id="update-btn">Update</button>
+        </div>
+
+        <p>Max Character Limit: <span id="max-count">0</span></p>
 
         <form action="" id="form">
-
             <label for="message">Type text:</label>
             <textarea name="message" id="message" placeholder="Type your text here..."></textarea>
+
         </form>
 
     </main>
