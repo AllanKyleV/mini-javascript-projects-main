@@ -13,6 +13,7 @@ body {
 }
 
 h1 {
+    font-size: 3rem;
     text-align: center;
     padding: 1.5rem;
 }
@@ -25,4 +26,5 @@ main {
 #clock {
     display: flex;
     font-size: 3rem;
+    font-weight: bold;
 }
