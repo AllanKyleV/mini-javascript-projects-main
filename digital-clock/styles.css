@@ -1,0 +1,28 @@
+:root {
+    --main-font: 'Courier New', Courier, monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+h1 {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#clock {
+    display: flex;
+    font-size: 3rem;
+}
